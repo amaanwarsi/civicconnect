@@ -56,3 +56,6 @@ Feel free to fork this repo and submit pull requests.
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.  
 
 ---
+
+## 📬 Contact
+Created by [Amaan Warsi](https://www.linkedin.com/in/amaanwarsi) – connect with me on LinkedIn!
