@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="">
+    <header class="icons-bg-none">
+        <div class="header-start">
+            <a href="./?target=Y2FsbHM=" class="nav-item notification call" id="callStaff">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-menu">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 8l16 0" />
+                    <path d="M4 16l16 0" />
+                </svg>
+            </a>
+            <a href="./" class="logo">CivicConnect</a>
+        </div>
+        <div class="icon-div">
+            <a href="./" class="nav-item notification" id="notificationBell">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-bell">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                </svg>
+                <span class="dot pulse hide"></span>
+            </a>
+            <div class="dropdown-container">
+
+                <div class="user-pic dropdownBtn"
+                    style="background-image: url('https://testingbot.com/free-online-tools/random-avatar/200?img=3');">
+                </div>
+                <div class="dropdown hide">
+                    <ul class="dropdown-content">
+                        <li><a href="./pages/report">Report</a></li>
+                        <li><a href="./settings">Settings</a></li>
+                        <li><a href="../pages/auth/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="container" style="margin-bottom: 10rem;">
+            <div id="toast" class="toast"></div>
+
+            <h1 class="heading main-heading">Greetings, <span>Amaan Warsi!</span></h1>
+            <div class="btn-grid table-top">
+                <h4 class="heading">Add more:</h4>
+                <a href="#!" id="openDrawerBtn" class="action-btn small-btn">+</a>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr</th>
+                            <th class="text-left scroll-fixed">Report ID</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="text-left scroll-fixed text-underline">MB011090</td>
+                            <td class="text-center text-light">Pothole</td>
+                            <td><span id="item-status-1" class="status success">Open</span></td>
+                            <td>
+                                <button type="button" class="action update-status-btn" data-item-id="1"
+                                    data-status="open">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="text-left scroll-fixed text-underline">MB011245</td>
+                            <td class="text-center text-light">Streetlight</td>
+                            <td><span id="item-status-2" class="status warning">Progress</span></td>
+                            <td>
+                                <button type="button" class="action update-status-btn" data-item-id="2"
+                                    data-status="in-progress">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="text-left scroll-fixed text-underline">MB011322</td>
+                            <td class="text-center text-light">Garbage</td>
+                            <td><span id="item-status-3" class="status danger">Pending</span></td>
+                            <td>
+                                <button type="button" class="action update-status-btn" data-item-id="3"
+                                    data-status="pending">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="text-left scroll-fixed text-underline">MB011478</td>
+                            <td class="text-center text-light">Water Leakage</td>
+                            <td><span id="item-status-4" class="status success">Open</span></td>
+                            <td>
+                                <button type="button" class="action update-status-btn" data-item-id="4"
+                                    data-status="open">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="text-left scroll-fixed text-underline">MB011590</td>
+                            <td class="text-center text-light">Broken Bench</td>
+                            <td><span id="item-status-5" class="status warning">Progress</span></td>
+                            <td>
+                                <button type="button" class="action update-status-btn" data-item-id="5"
+                                    data-status="in-progress">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="text-left scroll-fixed text-underline">MB011634</td>
+                            <td class="text-center text-light">Pothole</td>
+                            <td><span id="item-status-6" class="status success">Open</span></td>
+                            <td>
+                                <button type="button" class="action update-status-btn" data-item-id="6"
+                                    data-status="open">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="text-left scroll-fixed text-underline">MB011745</td>
+                            <td class="text-center text-light">Garbage</td>
+                            <td><span id="item-status-7" class="status danger">Pending</span></td>
+                            <td>
+                                <button type="button" class="action update-status-btn" data-item-id="7"
+                                    data-status="pending">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-grid">
+                <a href="./add-item" class="action-btn">Load More</a>
+            </div>
+        </div>
+        <div class="hide menu">
+            <a href="./" class="link  ">
+                <span class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-bell-ringing">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M17.451 2.344a1 1 0 0 1 1.41 -.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1 -1.818 .836a10.05 10.05 0 0 0 -2.54 -3.39a1 1 0 0 1 -.1 -1.41z" />
+                        <path
+                            d="M5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0 -2.54 3.39a1 1 0 1 1 -1.817 -.835a12.05 12.05 0 0 1 3.045 -4.065z" />
+                        <path
+                            d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z" />
+                        <path
+                            d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z" />
+                    </svg>
+                </span>
+                Orders
+            </a>
+            <a href="./insights" class="link  ">
+                <span class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-antenna-bars-5">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 18l0 -3" />
+                        <path d="M10 18l0 -6" />
+                        <path d="M14 18l0 -9" />
+                        <path d="M18 18l0 -12" />
+                    </svg>
+                </span>
+                Insights
+            </a>
+            <a href="./manage" class="link active">
+                <span class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-layout-grid">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                        <path d="M19 3a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                        <path d="M9 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                        <path d="M19 13a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" />
+                    </svg>
+                </span>
+                Manage
+            </a>
+            <a href="./menu" class="link ">
+                <span class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-clipboard-list">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M17.997 4.17a3 3 0 0 1 2.003 2.83v12a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 2.003 -2.83a4 4 0 0 0 3.997 3.83h4a4 4 0 0 0 3.98 -3.597zm-8.987 10.83h-.01a1 1 0 0 0 -.117 1.993l.127 .007a1 1 0 0 0 0 -2m5.99 0h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0 -2m-5.99 -4h-.01a1 1 0 0 0 -.117 1.993l.127 .007a1 1 0 0 0 0 -2m5.99 0h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0 -2m-1 -9a2 2 0 1 1 0 4h-4a2 2 0 1 1 0 -4z" />
+                    </svg>
+                </span>
+                Menu
+            </a>
+            <a href="./settings" class="link ">
+                <span class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-settings">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                </span>
+                Settings
+            </a>
+        </div>
+    </main>
+
+
+    <script src="../utilities/assets/js/dashboard/commonFunc.js"></script>
+    <script src="../utilities/assets/js/dashboard/updateStatus.js"></script>
+    <script id="app-config" data-restaurant-id="2"></script>
+    <script src="../utilities/assets/js/dashboard/liveNotifications.js"></script>
+    <script>
+        document.querySelectorAll('.update-status-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const itemId = this.getAttribute('data-item-id');
+                const currentStatus = this.getAttribute('data-status'); // 'open' or 'close'
+                const newStatus = currentStatus === 'open' ? 'close' : 'open';
+
+                const formData = new FormData();
+                formData.append('itemId', itemId);
+                formData.append('action', newStatus);
+
+                this.disabled = true;
+                const originalText = this.textContent;
+                this.textContent = 'Updating...';
+
+                fetch('../utilities/api/dashboard/update-item-status.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(async res => {
+                        if (!res.ok) throw new Error('Network error');
+                        const result = await res.json();
+
+                        if (result.success) {
+                            this.setAttribute('data-status', newStatus);
+                            this.textContent = newStatus === 'open' ? 'Close' : 'Open';
+
+                            const statusLabel = document.querySelector(`#item-status-${itemId}`);
+                            if (statusLabel) {
+                                statusLabel.textContent = newStatus === 'open' ? 'Open' : 'Closed';
+                                statusLabel.classList.toggle('success', newStatus === 'open');
+                                statusLabel.classList.toggle('danger', newStatus === 'close');
+                            }
+
+                            showToast(`Item ${newStatus === 'open' ? 'Available' : 'Closes'}`);
+                        } else {
+                            showToast(result.message || 'Update failed');
+                            this.textContent = originalText;
+                        }
+                    })
+                    .catch(() => {
+                        showToast('Unable to update status');
+                        this.textContent = originalText;
+                    })
+                    .finally(() => {
+                        this.disabled = false;
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>

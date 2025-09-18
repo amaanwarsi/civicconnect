@@ -1,61 +1,36 @@
-# 🌍 CivicConnect – Crowdsourced Civic Issue Reporting & Resolution
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-CivicConnect is a mobile-first platform that empowers citizens to report civic issues in real-time and helps governments respond faster with clear tracking, accountability, and updates.
+## Getting Started
 
-🔗 **Live Demo:** [amaanwarsi.thedev.id/civicconnect](https://amaanwarsi.thedev.id/civicconnect)
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## ✨ Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- 📷 **Easy Issue Reporting** – Raise issues using photos, videos, voice, or text with GPS/manual location support.  
-- ⚡ **Real-Time Tracking** – Citizens get instant updates and notifications on their reports.  
-- 🗺️ **Interactive Map** – Visualize reported civic problems across neighborhoods.  
-- 🏢 **Smart Routing** – Issues are automatically directed to the right municipal departments.  
-- 👨‍💼 **Admin & Worker Portals** – Staff can filter, assign, and update reports, while workers upload proof of resolution.  
-- 🔒 **Secure Verification** – Aadhaar-based authentication prevents fake reports.  
-- 🚨 **Emergency SOS** – Quick reporting for urgent issues like floods, accidents, or traffic hazards.  
-- 📊 **Analytics Dashboard** – Provides insights into trends, response times, and performance.  
-- 🌐 **Offline Mode** – Report issues without internet; syncs automatically once online.  
-- 🤖 **AI Assistance** – Prioritizes issues, filters spam, and detects duplicate reports.  
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🎯 Impact
+## Learn More
 
-- Empowers citizens to actively participate in improving their communities.  
-- Enhances transparency and accountability in municipal operations.  
-- Reduces maintenance costs through efficient resource allocation.  
-- Contributes to safer, cleaner, and more sustainable neighborhoods.  
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🚀 Demo
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-🔗 Try the live version here: [amaanwarsi.thedev.id/civicconnect](https://amaanwarsi.thedev.id/civicconnect)  
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 📌 Use Cases
-
-- Report **broken streetlights** and **potholes**.  
-- Track **garbage collection** and **water leaks**.  
-- Send alerts for **floods, pollution, or traffic problems**.  
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!  
-Feel free to fork this repo and submit pull requests.  
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.  
-
----
-
-## 📬 Contact
-Created by [Amaan Warsi](https://www.linkedin.com/in/amaanwarsi) – connect with me on LinkedIn!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
